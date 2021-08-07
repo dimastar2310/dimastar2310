@@ -31,9 +31,24 @@ public class LL_Practise {
 
     }
     //return 3rd element from last rec
-    public void  therd_elm(){
-       therd_elm(head);
-        //return p;
+    public void  therd_elm() {
+        Node1 h = head;
+        Node1 t = head;
+        int c = 0;
+        while (h.next != null) {
+            while (t != h) { //le ikanes le tnai harishon ve ikfoz
+                t = t.next;
+            }
+            if (h.next.next == null) {
+                break;
+            } else {
+                h = h.next.next;
+
+            }
+
+            System.out.println("the firtd elem from end " + t.val); //kaasher eshlnau kamut gdola shel eivarim
+            //naadif leadpis
+        }
     }
     public int n_elemnth(int n){
         Node1 p = head; //rishon
