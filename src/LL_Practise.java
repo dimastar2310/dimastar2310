@@ -73,22 +73,7 @@ public class LL_Practise {
         return -1; //le kayam
 
     }
-    private void therd_elm(Node1 head) {
-        if(head==null){
-            return ;
-        }
-        therd_elm(head.next);
-        c++;
-        System.out.print("c now ="+c); //c shelanu gam sofer
-        if(c==p){
-            l = p;
-           // System.out.print("our val is="+head.val);
 
-        }
-        System.out.println();
-
-       //return l;
-    }
 
     public void print()
 
@@ -113,10 +98,19 @@ public class LL_Practise {
     LL.insert_front(9);
     LL.insert_front(10);
     LL.insert_front(12);
+    //naase rega reshima mekusheret maagalit
     //LL.print();
-      // LL.therd_elm();
+       LL.therd_elm();
        System.out.println("the 3rd element=" +LL.n_elemnth(3));
       // System.out.println("answer is ="+p);
+  Node1 p = new Node1(5);
+  p.next = new Node1(10);
+  p.next.next= new Node1(20);
+  p.next.next.next = new Node1(30);
+  p.next.next.next.next = new Node1(40);
+  p.next.next.next.next.next = new Node1(1);
+
+
     }
 
 }
