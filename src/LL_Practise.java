@@ -108,9 +108,56 @@ public class LL_Practise {
   p.next.next= new Node1(20);
   p.next.next.next = new Node1(30);
   p.next.next.next.next = new Node1(40);
-  p.next.next.next.next.next = new Node1(1);
+  p.next.next.next.next.next = new Node1(1); //simulation inside main
+         p.next.next.next.next.next.next = p.next.next.next; //simulation inside main
+        boolean isCycle = isC(p);
+        System.out.println("is there cycle ? = "+isCycle);
+        int lenofC = lenOfCircle(p,isCycle);
+        int LOT = lenOfTail(p,lenofC);
+        int seeking_point = S_P(isCycle);
+        int  len_of_ll = lenofC + LOT;
+        //ok we hav
+        //detect if there is tail or in other words if theres cycle
+        //detect length of the tail
+        //determene seeking point of circle and tail
+        //lenght of the circle
+        //lengghth of all the linked list
+
+
+
 
 
     }
+
+
+
+    private static boolean isC(Node1 p) {
+        Node1 tortoes = p;
+        Node1 hare = p;
+        while (tortoes!=hare && hare.next!=null){
+            tortoes = tortoes.next;
+            hare = hare.next.next;
+
+        }
+        if(tortoes==hare){
+            return true; //there is circle
+        }
+        else
+        {
+            return false;
+        }
+    }
+    private static int lenOfCircle(Node1 p, boolean isCycle) {
+        return -1;
+    }
+    private static int S_P(boolean isCycle) { //the point is numeric
+        return -1;
+    }
+    private static int lenOfTail(Node1 p, int lenofC) {
+        return -1;
+    }
+
+
+
 
 }
