@@ -1,7 +1,7 @@
 ### Hi there 👋
 
-Computer Science and Math Student
-Made a lot intersting projects 
+Computer Science and Math Graduated
+Made a lot of intersting projects 
 like waiting for fastest elevator,
 agent in graph catching pokemons,
 IcecreamShop using 3Layer Structure DBMS,
